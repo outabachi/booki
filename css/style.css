@@ -74,10 +74,6 @@ a {
     height: 19px;
 }
 
-.navbar {
-    Padding: 0px 50px 0px 50px;
-}
-
 ul {
     margin: 0;
 }
@@ -109,14 +105,6 @@ li {
 
 #btn-2:hover {
     color: #0065FC;
-}
-
-#btn-1:active {
-    color: #DEEBFF;
-}
-
-#btn-2:active {
-    color: #DEEBFF;
 }
 
 /* Found our hebergements */
@@ -175,6 +163,9 @@ li {
     color: white;
     font-size: 16px;
     font-weight: bold;
+    padding: 0;
+    width: 139px;
+    margin-left: -5px;
 }
 
 #div-icon-rechercher {
@@ -184,6 +175,8 @@ li {
     border-radius: 0 15px 15px 0;
     border: none;
     opacity: 0;
+    margin-top: -48.5px;
+    margin-left: 190px;
 
 }
 
@@ -236,13 +229,13 @@ li {
     margin-right: 15px;
 }
 
-#filtre-1 {  
+#filtre-1 {
     margin-right: 25px;
     margin-left: 25px;
 }
 
 
-#filtre-3 {   
+#filtre-3 {
     margin-right: 25px;
     margin-left: 25px;
 }
@@ -262,6 +255,15 @@ li {
 #info-div {
     width: 24px;
     height: 24px;
+}
+
+#icon-info {
+    background-color: #0065FC;
+    color: white;
+    border-radius: 100%;
+    border: solid #d9d9d9;
+    border-width: 1.4px;
+
 }
 
 #info-txt {
@@ -466,6 +468,14 @@ footer p {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .div-div-activity a {
+        height: 270px;
+    }
+
+    .div-div-activity img {
+        height: 200px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -562,7 +572,7 @@ footer p {
         opacity: 1;
     }
 
-    #rechercher {
+    .rechercher {
         padding-top: 30px;
         width: 18em;
         margin-left: auto;
@@ -580,17 +590,44 @@ footer p {
 
     #filtre-1-2 {
         margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
-.informations{
-    text-align: center;
-    padding: 0 20px 0 20px;
-}
-#hebergements-in-marseille {
-    flex-direction: column-reverse;
-}
-.hebergements{
-    background-color: white;
-}
+
+    #filtre-3-4 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #filtre-1 {
+        width: 162.5px;
+    }
+
+    #filtre-2 {
+        width: 162.5px;
+    }
+
+    #filtre-3 {
+        width: 162.5px;
+    }
+
+    #filtre-4 {
+        width: 162.5px;
+    }
+
+    .informations {
+        text-align: center;
+        padding: 0 20px 0 20px;
+    }
+
+    #hebergements-in-marseille {
+        flex-direction: column-reverse;
+    }
+
+    .hebergements {
+        background-color: white;
+    }
+
     #hebergement-1 {
         margin-bottom: 30.5px;
     }
@@ -622,9 +659,11 @@ footer p {
     #div-hebergement-2 a {
         width: 100%;
     }
-.hebergements-and-populaires section{
-    border-radius: 0;
-}
+
+    .hebergements-and-populaires section {
+        border-radius: 0;
+    }
+
     .populaires-cards {
         flex-direction: column;
     }
@@ -639,11 +678,12 @@ footer p {
 
     .div-div-activity a {
         margin-bottom: 30px;
+        height: 200px;
     }
 
     .div-div-activity img {
         width: 100%;
-        height: 190px;
+        height: 141px;
     }
 
     footer {
